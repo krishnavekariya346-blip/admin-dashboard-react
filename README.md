@@ -1,5 +1,13 @@
 # Admin Dashboard Web Application (React.js)
 
+![React](https://img.shields.io/badge/React-18-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Axios](https://img.shields.io/badge/Axios-API-orange)
+![React Router](https://img.shields.io/badge/React_Router-Routing-red)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-UI-blue)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+
 A dynamic Admin Dashboard built using React.js that fetches and manages data from the DummyJSON REST API.
 
 This project demonstrates API integration, dynamic routing, and interactive UI components for managing multiple modules like products, carts, users, posts, and more.
