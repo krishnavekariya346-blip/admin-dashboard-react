@@ -19,6 +19,11 @@ This project demonstrates API integration, dynamic routing, and interactive UI c
 This Admin Dashboard allows users to view and manage data fetched from the DummyJSON REST API.  
 It includes multiple modules with sidebar navigation and dynamic UI rendering.
 
+## Live Demo
+
+[Open Live Dashboard](https://react-admin-dashboard-jadr9ydy5.vercel.app)
+
+
 ## Key Features
 
 - Authentication system with Login and Logout
