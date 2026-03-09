@@ -1,17 +1,138 @@
-# React + Vite
-React Admin Dashboard project
+# Admin Dashboard Web Application (React.js)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic Admin Dashboard built using React.js that fetches and manages data from the DummyJSON REST API.
 
-Currently, two official plugins are available:
+This project demonstrates API integration, dynamic routing, and interactive UI components for managing multiple modules like products, carts, users, posts, and more.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## About The Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This Admin Dashboard allows users to view and manage data fetched from the DummyJSON REST API.  
+It includes multiple modules with sidebar navigation and dynamic UI rendering.
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Authentication system with Login and Logout
+- Dashboard layout with sidebar navigation
+- Products, Carts, Recipes, Users, Posts, Comments, and Todos modules
+- REST API integration using Axios
+- Dynamic routing using React Router
+- Search functionality for filtering data
+- Detailed view pages for items
+- Cart management with quantity control
+- Automatic total price calculation
+- Responsive card-based UI
+
+---
+
+## Built With
+
+- React.js
+- JavaScript
+- Axios
+- React Router
+- HTML
+- Tailwind CSS
+
+---
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+Make sure you have installed:
+
+- Node.js
+- npm
+
+
+### Installation
+
+1 Clone the repository
+git clone https://github.com/krishnavekariya346-blip/admin-dashboard-react.git
+
+2 Go to the project directory
+cd admin-dashboard-react
+
+3 Install dependencies
+npm install
+
+4 Start the development server
+npm start
+
+The application will run at:
+http://localhost:3000
+
+---
+
+## Usage
+
+This dashboard allows users to explore and manage different datasets fetched from the DummyJSON API.
+
+Modules available:
+
+- Products
+- Carts
+- Recipes
+- Users
+- Posts
+- Comments
+- Todos
+
+Each module displays API data dynamically with search and detail view functionality.
+
+---
+
+## Screenshots
+
+### Login
+![Login](screenshots/login.png)
+
+### Signup
+![Signup](screenshots/signup.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Products Page
+![Products](screenshots/products.png)
+
+### Cart Page
+![Cart](screenshots/carts.png)
+
+### Post Page
+![Post](screenshots/posts.png)
+
+### Recipes Page
+![Recipe](screenshots/recipes.png)
+![RecipeDetails](screenshots/recipesDetails.png)
+
+### Comment Page
+![Comment](screenshots/comments.png)
+
+### User Page
+![User](screenshots/users.png)
+
+### Todo Page
+![todo](screenshots/todos.png)
+![todoDetails](screenshots/todosDetail.png)
+
+---
+
+
+## Contact
+
+Krishna Vekariya
+GitHub: https://github.com/krishnavekariya346-blip/admin-dashboard-react
+
+---
+
+## Acknowledgments
+
+- DummyJSON API
+- React Documentation
+- Axios Documentation
+- React Router Documentation
