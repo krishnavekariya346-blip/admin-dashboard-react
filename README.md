@@ -21,7 +21,7 @@ This project demonstrates:
 
 ---
 
-## Live Demo
+## 🌐 Live Demo
 
 [Open Live Dashboard](https://react-admin-dashboard-jadr9ydy5.vercel.app)
 
@@ -139,12 +139,6 @@ Each module supports:
 ### ✅ Todos
 ![Todo](screenshots/todos.png)
 ![Todo Details](screenshots/todosDetail.png)
-
----
-
-## 🌐 Live Demo
-
-👉 https://react-admin-dashboard-jadr9ydy5.vercel.app
 
 ---
 
