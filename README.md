@@ -1,151 +1,287 @@
-# Admin Dashboard Web Application (React.js)
+# 📱 Smart Todo Dashboard App (React Native + Expo)
 
-![React](https://img.shields.io/badge/React-18-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
-![Axios](https://img.shields.io/badge/Axios-API-orange)
-![React Router](https://img.shields.io/badge/React_Router-Routing-red)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-UI-blue)
+A modern mobile-first task management application built using React Native (Expo) with authentication, task tracking, and dynamic UI.
+
+![React Native](https://img.shields.io/badge/React_Native-Expo-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-ES6-blue)
+![Context API](https://img.shields.io/badge/Context_API-State-purple)
+![Expo Router](https://img.shields.io/badge/Expo_Router-Routing-black)
+![AsyncStorage](https://img.shields.io/badge/AsyncStorage-Storage-orange)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
+---
 
-A dynamic Admin Dashboard built using React.js that fetches and manages data from the DummyJSON REST API.
+## 📱 About The Project
 
-This project demonstrates API integration, dynamic routing, and interactive UI components for managing multiple modules like products, carts, users, posts, and more.
+This app allows users to manage daily tasks efficiently with a clean and interactive interface.
+It demonstrates:
+
+- Authentication system
+- Task CRUD operations
+- Local data persistence
+- State management using Context API
+- Mobile UI/UX best practices
+  
+---
+
+## 🚀 Features
+
+### 🔐 Authentication System
+- User **Register & Login**
+- Data stored using **AsyncStorage**
+- Persistent login session
+- User-specific dashboard (like Instagram)
 
 ---
 
-## About The Project
-
-This Admin Dashboard allows users to view and manage data fetched from the DummyJSON REST API.  
-It includes multiple modules with sidebar navigation and dynamic UI rendering.
-
-## Live Demo
-
-[Open Live Dashboard](https://react-admin-dashboard-jadr9ydy5.vercel.app)
-
-
-## Key Features
-
-- Authentication system with Login and Logout
-- Dashboard layout with sidebar navigation
-- Products, Carts, Recipes, Users, Posts, Comments, and Todos modules
-- REST API integration using Axios
-- Dynamic routing using React Router
-- Search functionality for filtering data
-- Detailed view pages for items
-- Cart management with quantity control
-- Automatic total price calculation
-- Responsive card-based UI
+### 🏠 Dashboard
+- Dynamic greeting (Good Morning / Afternoon / Evening)
+- Displays logged-in **user name**
+- **Progress bar** (task completion percentage)
+- **3 Interactive Stat Cards**
+  - 📊 Total Tasks
+  - ⏳ Pending Tasks
+  - ✅ Completed Tasks
+- Clickable → filters tasks accordingly
 
 ---
 
-## Built With
-
-- React.js
-- JavaScript
-- Axios
-- React Router
-- HTML
-- Tailwind CSS
+### 🔍 Task Management
+- Add, Edit, Delete tasks
+- Swipe gestures:
+  - 👉 Swipe right → Complete task
+  - 👈 Swipe left → Delete task
+- Task details modal with edit option
+- Prevents re-completing already completed tasks
 
 ---
 
-## Getting Started
+### 📅 Calendar Integration
+- View tasks based on **selected date**
+- Shows:
+  - 🟢 Completed tasks
+  - 🔴 Pending tasks
+- Click on date → filter tasks
 
-To get a local copy up and running follow these simple steps.
+---
 
-### Prerequisites
+### ➕ Add Task
+- Built using **React Hook Form**
+- Fields:
+  - Title
+  - Description
+  - Priority (Low / Medium / High)
+  - Due Date
+- Date Picker integration
+- Form validation
 
-Make sure you have installed:
+---
+
+### 👤 Profile Screen
+- Edit user name
+- Dark Mode toggle 🌙
+- Logout functionality
+- Changes reflect instantly on dashboard
+
+---
+
+### 🎨 UI/UX Highlights
+- Clean and modern UI
+- Dark / Light theme support
+- Haptic feedback
+- Toast notifications
+- Responsive design
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React Native (Expo)
+- 🧭 Expo Router
+- 🧠 Context API (Auth + Task Management)
+- 💾 AsyncStorage (Local Storage)
+- 📝 React Hook Form + Yup (Validation)
+- 📅 react-native-calendars
+- 🎯 Expo Haptics
+- 🔔 react-native-toast-message
+
+---
+
+## 📂 Project Structure
+```
+app/
+  (auth)/
+    login.tsx
+    register.tsx
+
+  (tabs)/
+    dashboard.tsx
+    addtask.tsx
+    profile.tsx
+    _layout.tsx
+
+calendar.tsx
+index.tsx
+tasks.tsx
+
+context/
+  AuthContext.tsx
+  TaskContext.tsx
+
+theme/
+  colors.ts
+  darkTheme.ts
+  useTheme.ts
+
+components/
+assets/
+hooks/
+styles/
+constants/
+```
+
+---
+
+## ⚙️ Getting Started
+**Prerequisites**
 
 - Node.js
-- npm
+- npm / yarn
+- Expo CLI
 
+---
 
-### Installation
+## ⚙️ Installation & Setup
 
-1 Clone the repository
-git clone https://github.com/krishnavekariya346-blip/admin-dashboard-react.git
+```bash
+# Clone the repo
+git clone https://github.com/krishnavekariya346-blip/smart-todo-dashboard-app.git
 
-2 Go to the project directory
-cd admin-dashboard-react
+# Navigate to project
+cd smart-todo-dashboard-app
 
-3 Install dependencies
+# Install dependencies
 npm install
 
-4 Start the development server
-npm run dev
+# Start Expo
+npx expo start
+```
+---
 
-The application will run at:
-http://localhost:5173
+📱 Usage
+
+- Register or login
+- Add new tasks
+- Swipe to complete or delete
+- Track progress on dashboard
+- Filter tasks using calendar
+- Toggle dark/light mode
 
 ---
 
-## Usage
-
-This dashboard allows users to explore and manage different datasets fetched from the DummyJSON API.
-
-Modules available:
-
-- Products
-- Carts
-- Recipes
-- Users
-- Posts
-- Comments
-- Todos
-
-Each module displays API data dynamically with search and detail view functionality.
-
----
-
-## Screenshots
+## 📸 Screenshots
 
 ### Login
-![Login](screenshots/login.png)
+![Login](screenshots/login1.jpg)
+![Login](screenshots/login2.jpg)
+![Login](screenshots/login3.jpg)
 
-### Signup
-![Signup](screenshots/signup.png)
+### Register
+![Register](screenshots/register1.jpg)
+![Register](screenshots/register2.jpg)
+![Register](screenshots/register3.jpg)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard1.jpg)
+![Dashboard](screenshots/dashboard2.jpg)
+![Dashboard](screenshots/dashboard3.jpg)
+![Dashboard](screenshots/dashboard4.jpg)
+![Dashboard](screenshots/dashboard5.jpg)
+![Search](screenshots/searchTask.jpg)
 
-### Products Page
-![Products](screenshots/products.png)
 
-### Cart Page
-![Cart](screenshots/carts.png)
+### Calendar
+![Calendar](screenshots/calendar1.jpg)
+![Calendar](screenshots/calendar2.jpg)
+![Calendar](screenshots/calendar3.jpg)
 
-### Post Page
-![Post](screenshots/posts.png)
+### AddTask
+![AddTask](screenshots/addTaskHigh.jpg)
+![AddTask](screenshots/addTaskMedium.jpg)
+![AddTask](screenshots/addTaskLow.jpg)
 
-### Recipes Page
-![Recipe](screenshots/recipes.png)
-![RecipeDetails](screenshots/recipesDetails.png)
+### Profile
+![Profile](screenshots/profile.jpg)
+![EditedProfile](screenshots/editProfile.jpg)
+![EditedProfile](screenshots/editProfile1.jpg)
 
-### Comment Page
-![Comment](screenshots/comments.png)
+### Tasks
+![tasks](screenshots/tasks1.jpg)
+![task-complete](screenshots/showCompleted.jpg)
+![completedToast](screenshots/completedToast.jpg)
+![disAppearComplete](screenshots/disappearCompleted.jpg)
+![task-delete](screenshots/showDelete.jpg)
+![deletedToast](screenshots/deletedToast.jpg)
+![AfterDeletedTasks](screenshots/tasks2.jpg)
+![ViewTask](screenshots/viewModal.jpg)
+![EditTask](screenshots/editModel.jpg)
+![PendingTasks](screenshots/pendingTask.jpg)
+![CompletedTasks](screenshots/completedTask.jpg)
 
-### User Page
-![User](screenshots/users.png)
-
-### Todo Page
-![todo](screenshots/todos.png)
-![todoDetails](screenshots/todosDetail.png)
+### DarkTheme
+![DarkTheme](screenshots/darkTheme1.jpg)
+![DarkTheme](screenshots/darkTheme2.jpg)
+![DarkTheme](screenshots/darkTheme3.jpg)
+![DarkTheme](screenshots/darkTheme4.jpg)
 
 ---
 
+## 🔐 Data Handling
+
+- Data stored locally using AsyncStorage
+- User-specific storage:
+  
+    TASKS_userEmail
+- Ensures each user sees only their tasks
+
+---
+
+## 🧠 Key Concepts Used
+
+- Context API for global state
+- Persistent authentication
+- Form validation with Yup
+- Swipe gestures for UX
+- Dynamic theming system
+
+---
+
+## 🌟 Future Improvements
+
+- 🔄 Cloud sync (Firebase / Supabase)
+- 📲 Push notifications
+- 🧑‍🤝‍🧑 Multi-user collaboration
+- 📊 Task analytics
+- 🏷️ Task categories
+
+---
 
 ## Contact
 
 Krishna Vekariya
-GitHub: https://github.com/krishnavekariya346-blip/admin-dashboard-react
+
+GitHub: https://github.com/krishnavekariya346-blip/smart-todo-dashboard-app
 
 ---
 
 ## Acknowledgments
+- React Native Docs
+- Expo Docs
+- AsyncStorage
+- React Hook Form
 
-- DummyJSON API
-- React Documentation
-- Axios Documentation
-- React Router Documentation
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
