@@ -63,23 +63,30 @@ This project demonstrates:
 ---
 
 ### Installation
-```
 
 1. Clone the repository
+```
 git clone https://github.com/krishnavekariya346-blip/admin-dashboard-react.git
+```
 
 2. Navigate to project folder
+```
 cd admin-dashboard-react
+```
 
 3. Install dependencies
+```
 npm install
+```
 
 4. Run the project
+```
 npm run dev
+```
 
 App will run at:
+```
 http://localhost:5173
-
 ```
 
 
@@ -151,7 +158,7 @@ https://github.com/krishnavekariya346-blip/admin-dashboard-react
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - DummyJSON API
 - React Documentation
